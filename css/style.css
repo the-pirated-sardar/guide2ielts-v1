@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --bs-navbar-toggler-border-color: rgba(40, 0, 0, 1);
+}  
+
+body{
+   /* background-color: #30292f; */
+   color: #280000;
+   background-color: #FDFFFF;
+   color: rgb(40, 0, 0);
+}
+
+
+.red-text{
+    color: #e3170a;
+}
+
+.navbar-text{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.dynamic-line {
+    height: 3px; 
+    background-color: #30292f; 
+    max-width: 60vw;
+    margin: auto;
+  }
+
+.custom-link a{
+    color: #e3170a !important;
+}
+.custom-link a:hover{
+    color: #413f54 !important;
+    background-color: #d8dbe2;
+}
+
+.my-custom-navbar {
+    --bs-tertiary-bg-rgb: 40, 0, 0;
+    --bs-bg-opacity: 1;
+}
+
+.custom-toggler-icon{
+    color: rgba(40, 0, 0, 1);
+}
+
+.custom-toggler-icon {
+    color: #d8dbe2; /* Replace #yourColor with the hex color you want */
+}
+
+
+
+/* main section */
+
+
+
+.full-vh {
+    height: 100vh;
+    width: auto;
+    object-fit: cover; /* This will ensure the image covers the entire area without stretching */
+}
+
+.full-vh-image {
+    max-height: 65vh;
+    width: auto;
+    object-fit: cover; /* This will ensure the image covers the entire area without stretching */
+}
+
+.btn-primary{
+    --bs-btn-color:#d8dbe2;
+    --bs-btn-bg:#e3170a;
+    --bs-btn-border-color: #e3170a;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #d8dbe2;
+    --bs-btn-hover-border-color: #d8dbe2;
+    --bs-btn-active-color: #e3170a;
+    --bs-btn-active-bg: #d8dbe2;
+}
+
+.intro{
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.name{
+    font-weight: 400;
+    font-size: 8rem;
+}
+
+.pro-titles{
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+
+
+.current-status{
+    font-weight: 200;
+    font-size: 1.2rem;
+    /* font-style: italic; */
+}
+
+.main-custom-height{
+    height: 27%;
+}
+
+.main-continue{
+    width: 100vw;
+    background-color: hsl(312, 8%, 20%);
+}
+
+.date{
+    font-weight: 200;
+    font-size: 1rem;
+    color: #e3170a;
+}
+
+/* website-wide section */
+
+.page-title{
+    font-weight: 400;
+    font-size: 5rem;
+}
+.page-title-context{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.page-title-smaller{
+    font-size: 4rem;
+}
+.page-below-title{
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+.page-subtitle{
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+.page-subtitle-bigger{
+    font-weight: 400;
+    font-size: 3rem;
+}
+.page-para{
+    font-weight: 300;;
+    font-size: 1.3rem;
+}
+.page-img{
+    border-radius: 0.5rem;
+    /* max-width: 504px; */
+    max-width: 90%;
+    height: auto;
+}
+
+/* footer section */
+
+.btn-social{
+    color: #3943B7; 
+}
+.btn-social i{
+    font-size: 2rem;
+}
+.btn-social p{
+    font-size: 1rem;
+}
+
+/* media queries */
+
+@media screen and (max-width: 992px) {
+    .full-vh-image {
+        display: none; /* This will hide the element */
+    }
+}
+@media screen and (max-width: 990px) {
+    .page-title{
+        font-size: 3rem;
+    }
+    .page-title-smaller{
+        font-size: 3rem;
+    }
+    .page-para{
+        font-size: 1rem;
+    }
+    /* .navbar-collapse {
+        text-align: end;
+        justify-content: flex-end; /* Aligns menu items to the right */
+}
+
+
+/* animation section */
+
+  /* Apply the animation to elements with a staggered delay */
+  .animate-1,
+  .animate-2,
+  .animate-3,
+  .animate-4,
+  .animate-5 {
+    opacity: 0; /* Initially set opacity to 0 */
+    visibility: hidden; /* Initially hide elements */
+    animation: fadeInUp 0.5s ease forwards;
+  }
+  
+
+  .animate-1 { animation-delay: 0.1s; }
+  .animate-2 { animation-delay: 0.2s; }
+  .animate-3 { animation-delay: 0.3s; }
+  .animate-4 { animation-delay: 0.4s; }
+  .animate-5 { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+    }
+    1% {
+      visibility: visible;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+
+  /* footer section */
+  
+  
+/* bootstrap rewrite or addition section */
+  .card-title{
+    font-size: 1.5rem;
+  }
